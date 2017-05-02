@@ -21,4 +21,5 @@ class ProductTest extends PHPUnit_Framework_TestCase
     {
         $this->assertEquals(59, $this->product->cost());        
     }
+
 }
