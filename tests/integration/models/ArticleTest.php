@@ -2,11 +2,14 @@
 
 use App\Article;
 use Illuminate\Foundation\Testing\DatabaseTransactions;
+use Illuminate\Foundation\Testing\DatabaseMigrations;
 
 
 class ArticleTest extends TestCase
 {
     use DatabaseTransactions;
+        use DatabaseMigrations;
+
     /** @test */
     public function it_fetches_trending_articles()
     {
